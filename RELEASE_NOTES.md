@@ -19,6 +19,12 @@ have to wait for the client to download on every guest provision.
 In addition, if the chef-client packages are already cached, then it is now possible to use
 Kitchen completely off-line.
 
+## [Workflow] Adopt new job dispatch system on cookbook generation
+The `chef generate cookbook` command now defaults to using the configuration for the new job
+dispatch system that replaces the previous push jobs based implementation with the SSH based
+implementation. For more details on this new system and how to use it, see:
+https://docs.chef.io/job_dispatch.html
+
 ## Cookstyle 1.1.0 with new code linting Cops
 
 Cookstyle has been updated from `0.0.1` to `1.1.0`, which upgrades the RuboCop engine from `0.39`
